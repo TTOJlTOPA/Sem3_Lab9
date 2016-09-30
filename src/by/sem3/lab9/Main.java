@@ -45,7 +45,7 @@ public class Main {
     }
 
     private static void deleteInsignificantZeros(StringBuffer str) {
-        Pattern pattern = Pattern.compile("(^|[^1-9])[0]+[0-9]");
+        Pattern pattern = Pattern.compile("(^|[^0-9])[0]+[0-9]");
         Matcher matcher = pattern.matcher(str);
         while (matcher.find(0)) {
             if (matcher.start() != 0) {
